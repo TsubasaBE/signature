@@ -4,3 +4,8 @@ function genereer() {
     document.getElementById("lblTel").innerHTML = document.getElementById("txtTel").value;
     document.getElementById("lblEmail").innerHTML = document.getElementById("txtEmail").value;
 }
+
+document.getElementById("frmForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    genereer();
+}, true);

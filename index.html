@@ -17,31 +17,33 @@
     </br>
     <fieldset>
         <legend>Uw informatie</legend>
-        <table>
-            <tbody>
-                <tr>
-                    <td><label for="txtNaam">Naam</label></td>
-                    <td><input type="text" name="txtNaam" id="txtNaam" required placeholder="bv. Jan CLAES"></td>
-                </tr>
-                <tr>
-                    <td><label for="txtFunctie">Functie </label></td>
-                    <td><input type="text" name="txtFunctie" id="txtFunctie" required placeholder="bv. Advocaat"></td>
-                </tr>
-                <tr>
-                    <td><label for="txtTel">Tel. </label></td>
-                    <td><input type="text" name="txtTel" id="txtTel" required placeholder="bv. +32 (0)14 56 59 92"></td>
-                </tr>
-                <tr>
-                    <td><label for="txtEmail">E-mail </label></td>
-                    <td><input type="text" name="txtEmail" id="txtEmail" required placeholder="bv. jan@devosvde-law.be"></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input type="button" value="Genereer" onclick="genereer();">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <form id="frmForm">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="txtNaam">Naam</label></td>
+                        <td><input type="text" name="txtNaam" id="txtNaam" required placeholder="bv. Jan CLAES"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtFunctie">Functie </label></td>
+                        <td><input type="text" name="txtFunctie" id="txtFunctie" required placeholder="bv. Advocaat"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtTel">Tel. </label></td>
+                        <td><input type="text" name="txtTel" id="txtTel" required placeholder="bv. +32 (0)14 56 59 92"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtEmail">E-mail </label></td>
+                        <td><input type="text" name="txtEmail" id="txtEmail" required placeholder="bv. jan@devosvde-law.be"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" id="cmdSubmit" value="Genereer" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
     </fieldset>
 
     <br />
