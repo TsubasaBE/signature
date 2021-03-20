@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Email signature generator</title>
+    <meta name="description" content="Email signature generator">
+    <meta name="author" content="Alan Smithee">
+
+    <link rel="stylesheet" href="default.css?v=1.0">
+
+</head>
+
+<body>
+    <h1 class="title">Email signature generator</h1>
+    </br>
+    <fieldset>
+        <legend>Uw informatie</legend>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="txtNaam">Naam</label></td>
+                    <td><input type="text" name="txtNaam" id="txtNaam" required placeholder="bv. Jan CLAES"></td>
+                </tr>
+                <tr>
+                    <td><label for="txtFunctie">Functie </label></td>
+                    <td><input type="text" name="txtFunctie" id="txtFunctie" required placeholder="bv. Advocaat"></td>
+                </tr>
+                <tr>
+                    <td><label for="txtTel">Tel. </label></td>
+                    <td><input type="text" name="txtTel" id="txtTel" required placeholder="bv. +32 (0)14 56 59 92"></td>
+                </tr>
+                <tr>
+                    <td><label for="txtEmail">E-mail </label></td>
+                    <td><input type="text" name="txtEmail" id="txtEmail" required placeholder="bv. jan@devosvde-law.be"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="Genereer" onclick="genereer();">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+
+    <br />
+    <br />
+
+    <fieldset>
+        <legend>Signature</legend>
+        <div id="divSignature" style='font-family: "Calibri (Body)", calibri, sans-serif; background-color: transparent;'>
+            <div style="background-color: transparent;">
+                <div style="margin-left: 12px;">
+                    <div id="lblNaam" style='font-size: 16px; font-family: "Calibri (Body)", calibri, sans-serif;'>Jan CLAES</div>
+                    <div id="lblFunctie" style='font-size: 12px; font-family: "Calibri (Body)", calibri, sans-serif;'>Advocaat</div>
+                    <div style='font-size: 16px; color: #cc9b56; font-family: "Calibri (Body)", calibri, sans-serif;'>DEVOS & VAN DEN EYNDE</div>
+                </div>
+                
+                <div style='font-size: 8px; font-family: "Calibri (Body)", calibri, sans-serif; background-color: transparent;'>
+                    &nbsp;
+                </div>
+
+                <div style="background-color: transparent;">
+                    <table style="border-collapse: collapse; background-color: transparent;">
+                        <tr>
+                            <td align="left">
+                                <div style='font-size: 12px; font-family: "Calibri (Body)", calibri, sans-serif; text-align: left;'>Tel direct : <span id="lblTel">+32 (0)14 56 59 92</span></div>
+                            </td>
+                            <td align="right">
+                                <div style='font-size: 12px; font-family: "Calibri (Body)", calibri, sans-serif; text-align: right;'>E-mail : <span id="lblEmail">noel@devosvde-law.be</span></div>
+                            </td>
+                        </tr>
+                        <tr style="border-top: 1px solid #cc9b56;">
+                            <td colspan="2" align="center">
+                                <div style='font-size: 12px; font-family: "Calibri (Body)", calibri, sans-serif; text-align: center;'>www.devosvde-law.be &#9679; Diestseweg 155, 2440 Geel &#9679; +32 (0)14 58 55 18</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+
+    <script src="default.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+  background-color: #ffffff;;
+}
+
+h1 {
+  text-align: center;
+  color: #009472;
+  font-family: "Calibri (Body)", calibri, sans-serif;
+  margin-top: 40px;
+}
+
+fieldset
+{
+  background-color: transparent;
+  max-width:1024px;
+  padding:16px;	
+  border: dotted solid;
+  border-color: #009472;
+  border-width: 1px;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+    margin: 0 auto;
+
+}
+
+label {
+  width: 150px;
+  text-align: right;
+}
+
+input {
+  margin: 2px;
+}
+
+h1, label, legend {
+  font-family: "Calibri (Body)", calibri, sans-serif;
+}
