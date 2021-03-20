@@ -36,3 +36,7 @@ input {
 h1, label, legend {
   font-family: "Calibri (Body)", calibri, sans-serif;
 }
+
+input {
+  width: 250px;
+}
